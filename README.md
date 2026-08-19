@@ -10,3 +10,10 @@ A multi-page Streamlit web application for fluid flow analysis, heat transfer ca
 | **2** | "Write a Streamlit layout using columns and Plotly to graph real-time transient heat cooling." | Plotly transient line chart updating from slider inputs in `app.py`. | Verified that lowering mass or increasing surface area correctly speeds up cooling curve decay. | Added dynamic plot duration bounds (1.5 x t_target) to prevent plot truncation. |
 | **3** | "Create a synthetic petrophysical dataset generator for porosity and permeability." | Core analysis dataset generator script. | Confirmed Kozeny-Carman exponential trends between porosity and log-permeability. | Added clipped bounds (0.1 to 5000 mD) to remove non-physical negative permeability values. |
 docs: update README with project description and AI audit table
+## Installation & Local Setup
+
+1. Clone the repository and install dependencies:
+   pip install -r requirements.txt
+
+2. Run the Streamlit app locally:
+   streamlit run app.py
